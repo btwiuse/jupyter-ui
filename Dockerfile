@@ -1,7 +1,6 @@
 FROM btwiuse/arch:ufo AS ufo
 
-ARG VARIANT=3-bullseye
-FROM mcr.microsoft.com/devcontainers/python:0-${VARIANT}
+FROM mcr.microsoft.com/devcontainers/python:0-3-bullseye
 
 # [Optional] Allow the vscode user to pip install globally w/o sudo
 ENV PIP_TARGET=/usr/local/pip-global
